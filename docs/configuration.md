@@ -1,15 +1,11 @@
-# Configuration
-
-You can use environment variables to configure the application.
-The supported parameters and their corresponding environment variables are listed below in the following format:
-
-```go
-// ENV_VARIABLE_NAME DEFAULT_VALUE
-```
-
-```go
-{%
-   include-markdown "snippets/config.snippet"
-   comments=false
-%}
-```
+{
+    // LOCATION_LATITUDE 51.74851
+    // LOCATION_LONGITUDE 14.20506
+    // MAX_RANGE_KILOMETERS 15
+    // Maximum altitude in feet that you want to spot aircraft at.
+    // MAX_ALTITUDE_FEET 0
+    // AIRCRAFT_TYPES ALL
+    // DISCORD_WEBHOOK_URL ""
+    // DISCORD_COLOR_ALTITUDE "true"
+    // FETCH_INTERVAL 60
+}
