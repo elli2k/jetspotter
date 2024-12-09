@@ -15,13 +15,13 @@ import (
 // ENV_VARIABLE_NAME DEFAULT_VALUE
 type Config struct {
 	// Latitude and Longitude coordinates of the location you want to use.
-	// LOCATION_LATITUDE 51.17348
-	// LOCATION_LONGITUDE 5.45921
+	// LOCATION_LATITUDE 51.7191592
+	// LOCATION_LONGITUDE 14.2279816
 	Location geodist.Coord
 
 	// Maximum range in kilometers from the location that you want aircraft to be spotted.
 	// Note that this is an approximation due to roundings.
-	// MAX_RANGE_KILOMETERS 30
+	// MAX_RANGE_KILOMETERS 15
 	MaxRangeKilometers int
 
 	// Maximum altitude in feet that you want to spot aircraft at.
@@ -49,7 +49,7 @@ type Config struct {
 	SlackWebHookURL string
 
 	// Webhook used to send notifications to Discord. If not set, no messages will be sent to Discord.
-	// DISCORD_WEBHOOK_URL ""
+	// DISCORD_WEBHOOK_URL https://discord.com/api/webhooks/1315742799030911036/S_YUoUP_Wfv7xkS-mQpwZTXx658FihLku0q-_gJtjCQCIraGL3w4waQ3YwyXAZQv-iLx
 	DiscordWebHookURL string
 
 	// Discord notifications use an embed color based on the alitute of the aircraft.
